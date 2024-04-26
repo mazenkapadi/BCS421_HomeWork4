@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "693379199303",
+    "project_id": "bcs421-homeworkmazen",
+    "storage_bucket": "bcs421-homeworkmazen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693379199303:android:05df82b74a51ff5ad01c62",
+        "android_client_info": {
+          "package_name": "com.example.bcs421_homework4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArTZ6LELcxkquzyO9nM9qjdmhpYVKKNIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
