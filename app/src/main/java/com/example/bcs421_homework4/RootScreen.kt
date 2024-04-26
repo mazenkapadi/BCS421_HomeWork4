@@ -92,7 +92,7 @@ fun RootScreen() {
                                     popUpTo(navController.graph.startDestinationId)
                                 }
                             },
-                            label = { Text(text = item.title) },
+                            label = { Text(item.title) },
                             icon = {
                                 Icon(
                                     contentDescription = item.title,
@@ -111,17 +111,17 @@ fun RootScreen() {
             modifier = Modifier.padding(padding)
         ) {
             // Navigation host for managing navigation between screens
-            NavHost(navController, "addScreen") {
+            NavHost(navController, "loginScreen") {
                 // Defining composable for each destination screen
-                composable(route = "loginScreen") {
+                composable("loginScreen") {
                     loginScreen(navController)
                     showBars = false
                 }
-                composable(route = "addScreen") {
+                composable("addScreen") {
                     addScreen(navController)
                     showBars = true
                 }
-                composable(route = "homeScreen") {
+                composable("homeScreen") {
                     homeScreen(navController)
                     showBars = true
                 }
@@ -149,7 +149,7 @@ fun myTopAppBar(navController: NavController, setSelectedItemIndex: (Int) -> Uni
             IconButton(onClick = {
                 showMenu = !showMenu
             }) {
-                Icon(Icons.Default.MoreVert, contentDescription = null)
+                Icon(Icons.Default.MoreVert, null)
             }
             // Dropdown menu for additional options
             DropdownMenu(
@@ -164,7 +164,7 @@ fun myTopAppBar(navController: NavController, setSelectedItemIndex: (Int) -> Uni
                         navController.navigate("homeScreen")
                         setSelectedItemIndex(0)
                     },
-                    leadingIcon = { Icon(Icons.Outlined.List, contentDescription = null) }
+                    leadingIcon = { Icon(Icons.Outlined.List, null) }
                 )
                 DropdownMenuItem(
                     text = { Text("Add Sale") },
@@ -173,7 +173,7 @@ fun myTopAppBar(navController: NavController, setSelectedItemIndex: (Int) -> Uni
                         navController.navigate("addScreen")
                         setSelectedItemIndex(1)
                     },
-                    leadingIcon = { Icon(Icons.Filled.Add, contentDescription = null) }
+                    leadingIcon = { Icon(Icons.Filled.Add, null) }
                 )
                 DropdownMenuItem(
                     text = { Text("Logout") },
@@ -181,7 +181,7 @@ fun myTopAppBar(navController: NavController, setSelectedItemIndex: (Int) -> Uni
                         showMenu = false
                         navController.navigate("loginScreen")
                     },
-                    leadingIcon = { Icon(Icons.Outlined.Lock, contentDescription = null) }
+                    leadingIcon = { Icon(Icons.Outlined.Lock, null) }
                 )
             }
         }

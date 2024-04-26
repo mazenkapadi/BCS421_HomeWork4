@@ -98,8 +98,6 @@ fun addScreen(navController: NavHostController) {
             }) {
                 Text("Add Sale")
             }
-
         }
-
     }
 }

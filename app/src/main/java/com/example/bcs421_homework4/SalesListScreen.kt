@@ -22,7 +22,7 @@ fun homeScreen(navController: NavHostController) {
     // ViewModel for managing the list of sales
     val salesListViewModel = viewModel { SalesListViewModel(MyApp.salesRepository) }
     // Collecting the list of sales as state from the ViewModel
-    val queryState = salesListViewModel.salesFlow.collectAsState(initial = emptyList())
+    val queryState = salesListViewModel.salesFlow.collectAsState(emptyList())
     val salesList = queryState.value
 
     // Surface composable for displaying the screen
@@ -34,7 +34,7 @@ fun homeScreen(navController: NavHostController) {
     ) {
         Column {
             // Displaying the heading for the sales list
-            DisplayHeading(heading = "Sales List")
+            DisplayHeading("Sales List")
             // LazyColumn for efficiently displaying a list of items
             LazyColumn(modifier = Modifier.padding(20.dp)) {
                 // Iterating over the list of sales and displaying each sale item
@@ -62,9 +62,9 @@ fun DisplaySaleItem(sale: Sale) {
     ) {
         Column(modifier = Modifier.padding(8.dp)) {
             // Displaying the name of the sale
-            DisplayNormalText(text = sale.name)
+            DisplayNormalText(sale.name)
             // Displaying the amount of the sale
-            DisplayNormalText(text = sale.amount.toString())
+            DisplayNormalText(sale.amount.toString())
         }
     }
 }
