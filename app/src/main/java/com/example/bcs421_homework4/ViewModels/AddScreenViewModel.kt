@@ -1,6 +1,8 @@
-package com.example.bcs421_homework4
+package com.example.bcs421_homework4.ViewModels
 
 import androidx.lifecycle.ViewModel
+import com.example.bcs421_homework4.Sale
+import com.example.bcs421_homework4.SalesRepository
 
 /**
  * ViewModel class for managing operations related to adding a sale.

@@ -1,4 +1,4 @@
-package com.example.bcs421_homework4
+package com.example.bcs421_homework4.Screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -33,6 +33,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.bcs421_homework4.DisplayHeading
+import com.example.bcs421_homework4.MyNavItem
 
 /**
  * Composable function for the root screen.

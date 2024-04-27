@@ -1,4 +1,4 @@
-package com.example.bcs421_homework4
+package com.example.bcs421_homework4.Screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -12,6 +12,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
+import com.example.bcs421_homework4.DisplayHeading
+import com.example.bcs421_homework4.DisplayNormalText
+import com.example.bcs421_homework4.MyApp
+import com.example.bcs421_homework4.Sale
+import com.example.bcs421_homework4.ViewModels.SalesListViewModel
 
 /**
  * Composable function for the home screen displaying the list of sales.

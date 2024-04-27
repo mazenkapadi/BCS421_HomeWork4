@@ -1,4 +1,4 @@
-package com.example.bcs421_homework4
+package com.example.bcs421_homework4.Screens
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Column
@@ -21,6 +21,8 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
+import com.example.bcs421_homework4.DisplayHeading
+import com.example.bcs421_homework4.ViewModels.LoginViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

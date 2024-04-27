@@ -1,4 +1,4 @@
-package com.example.bcs421_homework4
+package com.example.bcs421_homework4.ViewModels
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

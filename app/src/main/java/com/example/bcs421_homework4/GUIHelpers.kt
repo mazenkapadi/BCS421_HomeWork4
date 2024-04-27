@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
@@ -49,4 +50,21 @@ fun DisplayNormalText(text: String) {
         style = MaterialTheme.typography.bodyLarge,
         modifier = Modifier.padding(horizontal = 8.dp)
     )
+}
+
+/**
+ * Class representing an item in the navigation bar.
+ * @property title The title of the navigation item.
+ * @property route The route associated with the navigation item.
+ * @property iconSelected The selected icon for the navigation item.
+ * @property iconUnselected The unselected icon for the navigation item.
+ * @constructor Creates a MyNavItem object with provided properties.
+ */
+class MyNavItem(
+    val title: String,
+    val route: String,
+    val iconSelected: ImageVector,
+    val iconUnselected: ImageVector
+) {
+    // Variables have been declared in primary constructor
 }

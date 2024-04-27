@@ -1,4 +1,4 @@
-package com.example.bcs421_homework4
+package com.example.bcs421_homework4.Screens
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Column
@@ -19,7 +19,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
+import com.example.bcs421_homework4.ViewModels.AddScreenViewModel
+import com.example.bcs421_homework4.DisplayHeading
 import com.example.bcs421_homework4.MyApp.Companion.salesRepository
+import com.example.bcs421_homework4.Sale
 
 /**
  * Composable function for adding a new sale.
